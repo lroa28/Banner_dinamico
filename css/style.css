@@ -137,6 +137,8 @@ html, body{
 	display: block;
 }
 
+/*================== Banner =================*/
+
 .banner{
 	position: relative;
 	width: 100%;
@@ -351,7 +353,7 @@ html, body{
     .btn-menuMobile{
     	position: absolute;
     	z-index: 100;
-    	top: 0;
+    	top: 5;
     	right: 0;
     	color: #fff;
     	height: 50px;
@@ -362,7 +364,7 @@ html, body{
     	transition: all .3s ease-in-out;
     }
     .btn-menuMobile:hover{
-		color: #FAE76F;
+		color: blue;
 	}
     .Login{
     	position: fixed;
@@ -372,12 +374,25 @@ html, body{
     	z-index: 100;
     }
 
+	.banner{
+		position: relative;
+		width: 100%;
+		height: 50%;
+	}
+
+	.card {
+		border-radius: 20px;
+		height: 30%;
+
+	}
 	.card-img-top {
 		width: 95%;
 		height: 200px;
 		object-fit: cover;
 		object-position: top;
 	}
+
+
 
 }
 
