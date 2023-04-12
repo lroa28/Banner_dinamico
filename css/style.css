@@ -356,7 +356,7 @@ html, body{
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: red;
+  color: blue;
   transition: 0.2s;
 }
 
