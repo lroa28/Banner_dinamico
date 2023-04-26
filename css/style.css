@@ -237,10 +237,10 @@ html, body{
 	  transition: all 0.2s ease-out;
 	  top: -4px;
 	  border: 1px solid #cccccc;
-	  background-color: rgba(79, 91, 92, 0.487);
+	  background-color: rgba(52, 63, 64, 0.375);
 	  /* https://cssgenerator.org/box-shadow-css-generator.html */
 	  box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);
-      -webkit-box-shadow: 2px -1px 5px 15px  rgba(248, 24, 4, 0.783);
+      -webkit-box-shadow: 2px -1px 5px 15px  rgba(216, 227, 235, 0.783);
       -moz-box-shadow: 2px -1px 5px 15px rgb(48, 46, 46);
 }
 /* punta negra en el card*/  
