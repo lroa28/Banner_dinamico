@@ -49,6 +49,7 @@ html, body{
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .ShowBox{
 	opacity: 1 !important;
 	pointer-events: auto !important;
@@ -170,6 +171,9 @@ html, body{
 	font-size: 40px;
 	text-align: center;
 }
+.banner-content h2{
+    color: rgb(157, 42, 42);
+}
 .banner-content a{
 	text-decoration: none;
 	font-size: 20px;
@@ -227,7 +231,6 @@ html, body{
 	z-index: 0;
 	overflow: hidden;
 	border: 1.5px outset #cccccc;
-	
 	align-items: center;
 	align-content: center;
 	
@@ -237,11 +240,11 @@ html, body{
 	  transition: all 0.2s ease-out;
 	  top: -4px;
 	  border: 1px solid #cccccc;
-	  background-color: rgba(52, 63, 64, 0.375);
+	  background-color: rgba(129, 174, 178, 0.375);
 	  /* https://cssgenerator.org/box-shadow-css-generator.html */
-	  box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);
-      -webkit-box-shadow: 2px -1px 5px 15px  rgba(216, 227, 235, 0.783);
-      -moz-box-shadow: 2px -1px 5px 15px rgb(48, 46, 46);
+	  /*box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);*/
+      /*-webkit-box-shadow: 2px -1px 5px 15px  rgba(127, 185, 227, 0.914);*/
+      /*-moz-box-shadow: 2px -1px 5px 15px rgb(48, 46, 46);*/
 }
 /* punta negra en el card*/  
 /*.card:before {
@@ -320,7 +323,7 @@ html, body{
 
 .card-footer {
 	padding: 10px;
-	background-color: rgba(128, 128, 128, 0.377);
+	background-color: rgba(30, 26, 26, 0.149);
 }
 
 /*=========== BOTON ARRIBA ============*/
@@ -347,7 +350,7 @@ html, body{
   transform: translate(-50%, -50%);
   z-index: -1;
   display: block;
-  background-color: rgba(128, 128, 128, 0.488);
+  background-color: rgba(1, 1, 1, 0.836);
 }
 
 .go-top-button i {
@@ -356,8 +359,9 @@ html, body{
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: blue;
+  color:  rgba(129, 174, 178, 0.375);
   transition: 0.2s;
+  border: #141414;
 }
 
 .show {
@@ -407,7 +411,7 @@ html, body{
     .NavBarP-Nav{
     	width: 100%;
     	padding-top: 50px;
-    	height: 100%;
+    	height: auto; /* ajusta el h de la lista hamburguesa en col-xs*/
     	z-index: 97;
     	position: fixed;
     	opacity: 0;
