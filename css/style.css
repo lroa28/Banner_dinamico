@@ -114,7 +114,10 @@ html, body{
 	transition: all .3s ease-in-out;
 }
 .NavBarP-Nav > ul > li > a:hover{
-	color: red;
+	color: black;
+	transition: all 0.2s ease-out;
+	border-radius: 5px;
+	background-color: rgba(32, 178, 171, 0.699);
 }
 /*================== Login =================*/
 .Login{
@@ -139,7 +142,6 @@ html, body{
 }
 
 /*================== Banner =================*/
-
 .banner{
 	position: relative;
 	width: 100%;
@@ -172,7 +174,10 @@ html, body{
 	text-align: center;
 }
 .banner-content h2{
-    color: rgb(157, 42, 42);
+    color: lightseagreen;
+	font-weight: 800;
+	font-size: 60px;
+	text-decoration: solid;
 }
 .banner-content a{
 	text-decoration: none;
@@ -182,12 +187,14 @@ html, body{
 	border: 2px solid #7f7b7b;
 	text-transform: uppercase;
 	transition: all .3s ease-in-out;
+	border-radius: 10px;
 }
 .banner-content a:hover{
 	background-color: red;
 	font-style: italic;
 
 }
+
 @keyframes banner{
 	0%{
 		background-image: url('../assets/img/banner-1.jpg');
@@ -207,14 +214,12 @@ html, body{
 	75%{
 		background-image: url('../assets/img/banner-3.jpg');
 	}
-	
 	76%{
 		background-image: url('../assets/img/banner-4.jpg');
 	}
 	100%{
 		background-image: url('../assets/img/banner-4.jpg');
 	}
-
 }
 
 /*=============== Cards ================*/
@@ -237,10 +242,10 @@ html, body{
 }
    
 .card:hover {
-	  transition: all 0.2s ease-out;
+	  transition: all 1s ease-out;
 	  top: -4px;
 	  border: 1px solid #cccccc;
-	  background-color: rgba(129, 174, 178, 0.375);
+	  background-color: rgba(32, 178, 171, 0.699);
 	  /* https://cssgenerator.org/box-shadow-css-generator.html */
 	  /*box-shadow: 2px -1px 5px 15px  rgba(67, 66, 66, 0.515);*/
       /*-webkit-box-shadow: 2px -1px 5px 15px  rgba(127, 185, 227, 0.914);*/
@@ -350,7 +355,7 @@ html, body{
   transform: translate(-50%, -50%);
   z-index: -1;
   display: block;
-  background-color: rgba(1, 1, 1, 0.836);
+  background-color: rgba(255, 0, 0, 0.845);
 }
 
 .go-top-button i {
@@ -359,7 +364,7 @@ html, body{
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color:  rgba(129, 174, 178, 0.375);
+  color:  black;
   transition: 0.2s;
   border: #141414;
 }
@@ -370,8 +375,8 @@ html, body{
 
 .show .go-top-button {
   animation: popup 0.3s ease-in-out;
-  width: 6.6rem;
-  height: 6.6rem;
+  width: 4.6rem;
+  height: 4.6rem;
   z-index: 11;
 }
 
@@ -398,7 +403,8 @@ html, body{
 =                                        Media queries                                                  =
 ========================================================================================================*/
 /* col-xs */
-@media (max-width: 767px) {
+@media (max-width: 576px) {
+/* NavBar */
 	.NoScroll{
 		overflow-y: hidden;
 	}
@@ -449,14 +455,29 @@ html, body{
     	padding-top: 50px;
     	z-index: 100;
     }
-
+/* Banner */
 	.banner{
 		position: relative;
 		width: 100%;
 		height: 70%;
 	}
 
-	.card {
+	.banner-content h2{
+		color: lightseagreen;
+		font-weight: 800;
+		font-size: 30px;
+		text-decoration: solid;
+		text-align: center;
+	}
+
+/* Sucursales - Card */
+.columna {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+
+.card {
 		border-radius: 20px;
 		height: 40%;
 		width: 100%; /* falta alinear las cards para xs estan en la izq*/
@@ -484,7 +505,7 @@ html, body{
 }
 
 /* col-md */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
 	.card-img-top {
 		width: 95%;
 		height: 200px;
